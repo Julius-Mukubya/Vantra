@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Mirrors AppColors in lib/core/theme/app_theme.dart and the token table in context/ui-context.md. */
+:root {
+  --bg-base: #F0F8FF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-alt: #E8F2FB;
+
+  --text-primary: #1A2332;
+  --text-muted: #6B7B8D;
+
+  --accent-primary: #4A90D9;
+  --accent-light: #7AB3E8;
+  --accent-dark: #2B6CB0;
+
+  --border-default: #D0DAE5;
+  --border-focus: #4A90D9;
+
+  --state-error: #E74C3C;
+  --state-success: #2ECC71;
+  --state-warning: #F39C12;
+
+  --badge-self: #F39C12;
+  --badge-coach: #1ABC9C;
+  --badge-club: #F1C40F;
+  --badge-verified: #27AE60;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+
+  --color-base: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-surface-alt: var(--bg-surface-alt);
+
+  --color-ink: var(--text-primary);
+  --color-muted: var(--text-muted);
+
+  --color-accent: var(--accent-primary);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+
+  --color-line: var(--border-default);
+  --color-focus: var(--border-focus);
+
+  --color-success: var(--state-success);
+  --color-warning: var(--state-warning);
+  --color-error: var(--state-error);
+
+  --color-badge-self: var(--badge-self);
+  --color-badge-coach: var(--badge-coach);
+  --color-badge-club: var(--badge-club);
+  --color-badge-verified: var(--badge-verified);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}

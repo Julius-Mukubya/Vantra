@@ -40,5 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# release APKs (drop vantra.apk here, do not commit)
-/public/downloads/*.apk
+# release APKs are committed so Vercel can serve them from /downloads
